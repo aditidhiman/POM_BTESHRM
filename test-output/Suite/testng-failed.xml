@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Test.ReportTest">
+        <methods>
+          <include name="setup"/>
+          <include name="check_functionalityof_dropdown_report"/>
+        </methods>
+      </class> <!-- Test.ReportTest -->
+      <class name="Test.LoginTest">
+        <methods>
+          <include name="Login_blankusername_invalidpassword"/>
+          <include name="Login_validusername_validpassword"/>
+          <include name="login_without_entering_credentials"/>
+          <include name="setup"/>
+          <include name="login_TestCase_invalidUsername_blankPassword"/>
+        </methods>
+      </class> <!-- Test.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
